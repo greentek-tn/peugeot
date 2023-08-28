@@ -1,0 +1,10 @@
+stages:
+  - build
+build:
+  stage: build
+  script:
+    - flutter clean
+    - flutter pub get
+    - flutter build apk 
+  tags:
+    - android
